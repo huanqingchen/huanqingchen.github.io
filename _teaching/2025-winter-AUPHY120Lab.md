@@ -9,6 +9,7 @@ location: "City, Country"
 ---
 
 <a href="https://apps.ualberta.ca/catalogue/course/auphy/120">link</a>
+
 <!--
 This is a description of a teaching experience. You can use markdown like any other post.
 

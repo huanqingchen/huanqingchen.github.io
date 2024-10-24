@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome to the website of Prof. Huanqing Chen"
+#title: "Welcome to the website of Prof. Huanqing Chen"
 author_profile: true
 redirect_from: 
   - /about/
