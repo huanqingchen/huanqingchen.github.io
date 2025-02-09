@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[Download CV](/files/Huanqing_CV.pdf)
+
 Education
 ======
 * Ph.D in Astronomy and Astrophysics, University of Chicago, 2022
