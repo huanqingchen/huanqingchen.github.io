@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Building your own HTML poster — A tutorial on using this template to make your own posters</title>
+    <link rel="stylesheet" href="poster.css">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+    <!-- Based on a poster template from https://github.com/cpitclaudel/academic-poster-template -->
+
+          <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+          <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+    
+    <style type="text/css">
+  html { font-size: 1.15rem }
+</style>
+  </head>
+
+  <body vocab="http://schema.org/" typeof="ScholarlyArticle">
+    <header role="banner">
+      <aside>
+          <a href="https://github.com/cpitclaudel/academic-poster-template"><img src="logo.svg" alt="Tutorial logo"></a>
+      </aside>
+      <div>
+        <h1 property="headline">Building your own HTML poster</h1>
+                  <h2 property="alternativeHeadline">A tutorial on using this template to make your own posters</h2>
+                <address>
+              <a property="author">Clément Pit-Claudel<sup>a</sup></a>
+<br />  <sup>a</sup><a property="sourceOrganization">MIT CSAIL</a>
+        </address>
+        <span class="publication-info">
+                      <span property="publisher">Unpublished</span>,
+            <time pubdate property="datePublished" datetime="2020-09-08">September 8, 2020</time>
+                  </span>
+      </div>
+      <aside>
+          <a href="https://csail.mit.edu"><img style="background: white" src="csail.png" alt="MIT CSAIL Logo"></a>
+      </aside>
+    </header>
+
+    <main property="articleBody">
+        <article property="abstract">
+        <header><h3>Abstract</h3></header>
+
+	<p>Measuring the density of the intergalactic medium using quasar sightlines in the epoch of reionization is challenging due to the saturation of Lyman-α absorption.
+	Near a luminous quasar, however, the enhanced radiation creates a proximity zone observable in the quasar spectra where the Lyman-α absorption is not saturated.
+	In this study, we use 10 high-resolution (R ~ 10,000) z\(\sim\) 6 quasar spectra from the extended XQR-30 sample to measure the density field in the quasar proximity zones for the first time.
+	We find a variety of environments within 3 pMpc distance from the quasars.</p>  
+
+  </article>
+
+  <article>
+    <header><h3>Introduction: Quasar Proximity Zones</h3></header>
+    <p>There are two ways to use this template: directly editing the HTML, and using Jinja2 templates.</p>
+  </article>
+
+  <article>
+    <header><h3>Editing the HTML directly</h3></header>
+
+    <p>This is the simplest way to get started, since it just requires a text editor:</p>
+
+    <ol>
+      <li>Download the <a href="https://github.com/cpitclaudel/academic-poster-template/releases/latest">latest release</a> of this template (or download the <a href="https://raw.githubusercontent.com/cpitclaudel/academic-poster-template/main/docs/tutorial/poster.html">webpage</a> and the corresponding <a href="https://raw.githubusercontent.com/cpitclaudel/academic-poster-template/main/docs/poster.css">stylesheet</a> directly from the <a href="https://github.com/cpitclaudel/academic-poster-template/tree/main/docs/tutorial/">repository</a>).</li>
+      <li>Adjust the metadata and add blocks to the <code>main</code> section.</li>
+    </ol>
+
+
+    
+
+    <figure>
+      <img src="https://huanqingchen.github.io/images/proximityzoneintro.png" width="100" height="180" alt="An orange shield with a white 5 emblazoned on it and the letters HTML above it.">
+      <figcaption>The HTML5 logo (<i>Source: <a href="https://www.w3.org/html/logo/">W3C</a></i>)</figcaption>
+    </figure>
+
+
+
+
+  </article>
+
+   <article>
+    <header><h3>Figures</h3></header>
+
+    <p>Use the following code to insert a figure:</p>
+
+    <pre>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">figure</a>&gt;
+  <i>Figure contents:
+    images (&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">img</a>&gt;, &lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object">object</a>&gt;),
+    tables (&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">table</a>&gt;),
+    quotes, …</i>
+  &lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption">figcaption</a>&gt;<i>Figure caption</i>&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption">figcaption</a>&gt;
+&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">figure</a>&gt;</pre>
+
+    <hr/>
+
+    <figure>
+      <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" width="197" height="64" alt="An orange shield with a white 5 emblazoned on it and the letters HTML above it.">
+
+      <figcaption>The HTML5 logo (<i>Source: <a href="https://www.w3.org/html/logo/">W3C</a></i>)</figcaption>
+    </figure>
+
+  </article>
+
+  
+  <article>
+    <header><h3>Images</h3></header>
+
+    <p>Use the following code to include an image:</p>
+
+
+
+    <pre class="justify-center">&lt;<a href="https://huanqingchen.github.io/images/proximityzoneintro.png">img</a> src="<var>source url</var>"
+     alt="<var>image description</var>"&gt;</pre>
+
+    <p>Prefer scalable images (SVG) for technical drawings and figures.</p>
+
+    <small>Most technical drawing software supports saving as SVG; if yours does not, you can typically save to PDF, which can then easily be <a href="https://superuser.com/questions/381125/how-do-i-convert-an-svg-to-a-pdf-on-linux">converted to SVG</a> (this is useful for TikZ diagrams in particular).</small>
+
+    <p>Make sure to include an <code>alt</code> attribute: it will be read by assistive technology and displayed while the image is loading
+    </p>
+  </article>
+
+
+  <article>
+    <header><h3>Poster layout</h3></header>
+
+    <p>Posters made using this template are composed of a sequence of blocks.  You can use CSS to customize the way the blocks are designed; by default they scroll left to right on wide screens and top to bottom on narrow screens.</p>
+
+    <b>Try resizing your browser to see how the poster's layout changes.</b>
+  </article>
+
+
+
+  <figure style="flex-grow: 9999999">
+    <img style="width: 70%" src="logo.svg" alt="Project logo" />
+    <figcaption>A stand-alone figure to fill the remaining space.</figcaption>
+  </figure>
+    </main>
+
+    <footer>
+      <address class="monospace">  <a href="https://github.com/cpitclaudel/academic-poster-template">https://github.com/cpitclaudel/academic-poster-template</a>
+</address>
+      <address class="monospace">  clement.pitclaudel@live.com
+</address>
+                    <span class="credits">
+          Based on an <a href="https://github.com/cpitclaudel/academic-poster-template">open poster template</a>.
+        </span>
+          </footer>
+  </body>
+</html>
+
