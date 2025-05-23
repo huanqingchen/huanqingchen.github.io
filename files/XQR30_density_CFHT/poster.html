@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Building your own HTML poster — A tutorial on using this template to make your own posters</title>
+    <title>Measuring the Density Fields around Bright Quasars with XQR-30 Spectra </title>
     <link rel="stylesheet" href="poster.css">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
     <!-- Based on a poster template from https://github.com/cpitclaudel/academic-poster-template -->
@@ -19,14 +19,18 @@
   <body vocab="http://schema.org/" typeof="ScholarlyArticle">
     <header role="banner">
       <aside>
-          <a href="https://github.com/cpitclaudel/academic-poster-template"><img src="logo.svg" alt="Tutorial logo"></a>
+          <a href="https://xqr30.inaf.it/"><img src="https://huanqingchen.github.io/files/XQR30_density_CFHT/XQR.png" alt="Tutorial logo"></a>
       </aside>
       <div>
-        <h1 property="headline">Building your own HTML poster</h1>
-                  <h2 property="alternativeHeadline">A tutorial on using this template to make your own posters</h2>
+        <h1 property="headline">Measuring the Density Fields around Bright Quasars at z~6 with XQR-30 Spectra</h1>
+                  <h2 property="alternativeHeadline"> </h2>
                 <address>
-              <a property="author">Clément Pit-Claudel<sup>a</sup></a>
-<br />  <sup>a</sup><a property="sourceOrganization">MIT CSAIL</a>
+              <a property="author">Huanqing Chen<sup>1</sup>, Anna-Christina Eilers<sup>2</sup>, Sarah Bosman<sup>3</sup>, Nick Gnedin<sup>4</sup>, and the XQR-30 Collaboration</a>
+<br />  <sup>1</sup><a property="sourceOrganization">University of Alberta, University of Chicago,  
+        <sup>2</sup><a property="sourceOrganization">MIT, 
+        <sup>3</sup><a property="sourceOrganization">ITP Heidelberg, 
+        <sup>4</sup><a property="sourceOrganization">Fermilab, University of Chicago
+                  </a>
         </address>
         <span class="publication-info">
                       <span property="publisher">Unpublished</span>,
@@ -34,7 +38,7 @@
                   </span>
       </div>
       <aside>
-          <a href="https://csail.mit.edu"><img style="background: white" src="csail.png" alt="MIT CSAIL Logo"></a>
+          <a href="https://www.alcf.anl.gov/science/projects/cosmic-reionization-computers-0"><img src="https://huanqingchen.github.io/files/XQR30_density_CFHT/croc.png" alt="croc logo"></a>
       </aside>
     </header>
 
@@ -42,99 +46,168 @@
         <article property="abstract">
         <header><h3>Abstract</h3></header>
 
-	<p>Measuring the density of the intergalactic medium using quasar sightlines in the epoch of reionization is challenging due to the saturation of Lyman-α absorption.
-	Near a luminous quasar, however, the enhanced radiation creates a proximity zone observable in the quasar spectra where the Lyman-α absorption is not saturated.
-	In this study, we use 10 high-resolution (R ~ 10,000) z\(\sim\) 6 quasar spectra from the extended XQR-30 sample to measure the density field in the quasar proximity zones for the first time.
-	We find a variety of environments within 3 pMpc distance from the quasars.</p>  
+	<p>
+
+	In this study, we use ten high-resolution z\(\sim\) 6 quasar spectra from the 
+extended XQR-30 sample to measure the density field in the quasar proximity zones.
+It is the first time that the continuous density field is measured at such high redshifts.
+	We find a higher density environments within the first 1.5 physical Mpc (pMpc) from the quasars, and  quantified the host halo mass of these first quasars.
+
+</p>  
 
   </article>
 
   <article>
     <header><h3>Introduction: Quasar Proximity Zones</h3></header>
-    <p>There are two ways to use this template: directly editing the HTML, and using Jinja2 templates.</p>
+    <p>
+Measuring the density of the intergalactic medium using quasar sightlines in the epoch of reionization is challenging due to the saturation of Lyman-α absorption.
+	Near a luminous quasar, however, the enhanced radiation creates a proximity zone observable in the quasar spectra where the Lyman-α absorption is not saturated.
+        <figure>
+      <img src="https://huanqingchen.github.io/files/XQR30_density_CFHT/proximityzoneintro.png" width="300" height="300" alt="An orange shield with a white 5 emblazoned on it and the letters HTML above it.">
+      <figcaption>An example of \(z~6\) quasar. The red rectangle highlights the proximity zone, where Ly\(\alpha\) absorption is not saturated.</figcaption>
+    </figure>
+    <p>In <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...916..118C/abstract">Chen+21</a>, 
+we found that up to ~ 4 pMpc away from the quasar, 
+the intergalactic medium is in photoionization equilibrium. 
+        The photoionization rate \( \Gamma \) is dominated by the quasar and follows an almost ideal inverse-square law profile, 
+        \(\Gamma\propto d^{-2}\). 
+        This relationship allows us to recover the density field using the photoionization equilibrium equation.
   </article>
+      
 
   <article>
-    <header><h3>Editing the HTML directly</h3></header>
+    <header><h3>XQR-30 Data</h3></header>
+<!---    <p>
+   We uses ten high-resolution (R~10,000), high signal-to-noise (\(\gt\) 10-20 per 10 km/s pixel) quasar spectra of luminous quasars ( \(M_{1450} \lt -26.5\) ) at z~6.
+All the quasars in this sample have accurate redshift measurements from  [C II] or CO lines.
+These quasars are selected to be free of broad absorption lines or proximate damped Lyman-\(\alpha\) systems.
+    </p>
+--->
+    <p>
+      To measure the density field at redshift ~6, we utilized the<a href="https://xqr30.inaf.it/"> XQR-30 survey</a>,
+      the largest spectroscopic program targeting quasars from the epoch of reionization.
+      XQR-30 allocated 250 hours of observations with the X-shooter spectrograph on the ESO Very Large Telescope (VLT)
+      to assemble an unparalleled, homogeneous sample.
+      The dataset consists of high-resolution (R ~ 10,000), high signal-to-noise ratio (SNR &gt; 10 per 10 km/s pixel)
+      spectra of 30 luminous quasars (M<sub>1450</sub> &lt; –26.5) spanning z = 5.8 - 6.6.
+    </p>
+<p>
+We select quasars from the XQR-30 survey according to the following criteria:
+</p>
+<ul>
+      <li>Redshift Accuracy: Determined using [C II] or CO emission lines</li>
+          <li>No Broad Absorption Lines (BALs)</li>
+          <li>No Proximate Damped Lyman-Alpha (PDLA) Systems</li>
+    </ul>
 
-    <p>This is the simplest way to get started, since it just requires a text editor:</p>
 
-    <ol>
-      <li>Download the <a href="https://github.com/cpitclaudel/academic-poster-template/releases/latest">latest release</a> of this template (or download the <a href="https://raw.githubusercontent.com/cpitclaudel/academic-poster-template/main/docs/tutorial/poster.html">webpage</a> and the corresponding <a href="https://raw.githubusercontent.com/cpitclaudel/academic-poster-template/main/docs/poster.css">stylesheet</a> directly from the <a href="https://github.com/cpitclaudel/academic-poster-template/tree/main/docs/tutorial/">repository</a>).</li>
-      <li>Adjust the metadata and add blocks to the <code>main</code> section.</li>
-    </ol>
-
-
-    
-
-    <figure>
-      <img src="https://huanqingchen.github.io/images/proximityzoneintro.png" width="100" height="180" alt="An orange shield with a white 5 emblazoned on it and the letters HTML above it.">
-      <figcaption>The HTML5 logo (<i>Source: <a href="https://www.w3.org/html/logo/">W3C</a></i>)</figcaption>
+      <figure>
+      <img src="https://huanqingchen.github.io/files/XQR30_density_CFHT/data_example.svg" width="350" height="250" alt="">
+      <figcaption>
+      </figcaption>
     </figure>
-
-
-
-
-  </article>
-
-   <article>
-    <header><h3>Figures</h3></header>
-
-    <p>Use the following code to insert a figure:</p>
-
-    <pre>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">figure</a>&gt;
-  <i>Figure contents:
-    images (&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">img</a>&gt;, &lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object">object</a>&gt;),
-    tables (&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">table</a>&gt;),
-    quotes, …</i>
-  &lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption">figcaption</a>&gt;<i>Figure caption</i>&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption">figcaption</a>&gt;
-&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">figure</a>&gt;</pre>
-
-    <hr/>
-
-    <figure>
-      <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" width="197" height="64" alt="An orange shield with a white 5 emblazoned on it and the letters HTML above it.">
-
-      <figcaption>The HTML5 logo (<i>Source: <a href="https://www.w3.org/html/logo/">W3C</a></i>)</figcaption>
-    </figure>
-
-  </article>
-
-  
-  <article>
-    <header><h3>Images</h3></header>
-
-    <p>Use the following code to include an image:</p>
-
-
-
-    <pre class="justify-center">&lt;<a href="https://huanqingchen.github.io/images/proximityzoneintro.png">img</a> src="<var>source url</var>"
-     alt="<var>image description</var>"&gt;</pre>
-
-    <p>Prefer scalable images (SVG) for technical drawings and figures.</p>
-
-    <small>Most technical drawing software supports saving as SVG; if yours does not, you can typically save to PDF, which can then easily be <a href="https://superuser.com/questions/381125/how-do-i-convert-an-svg-to-a-pdf-on-linux">converted to SVG</a> (this is useful for TikZ diagrams in particular).</small>
-
-    <p>Make sure to include an <code>alt</code> attribute: it will be read by assistive technology and displayed while the image is loading
+    <p>
+Above is a rest-frame spectrum for one of the ten quasars in this study. The black line is the observed flux, with resolution of 22 km/s.
+                  The vertical red line shows the position of the wavelength of Lyman-α. The solid blue line shows the best continuum fitting with dotted blue showing the uncertainty. 
     </p>
   </article>
 
+<!---
+  <article>
+    <header><h3>Density Recovery Method</h3></header>
+    <p>In <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...916..118C/abstract">Chen+21</a>, 
+we found that up to ~ 4 pMpc away from the quasar, 
+the intergalactic medium is in photoionization equilibrium. 
+        The photoionization rate \( \Gamma \) is dominated by the quasar and follows an almost ideal inverse-square law profile, 
+        \(\Gamma\propto d^{-2}\). 
+        This relationship allows us to recover the density field using the photoionization equilibrium equation.
+    </p>
+    <figure>
+      <img src="https://huanqingchen.github.io/files/XQR30_density_CFHT/rectest.svg" width="200" height="200" alt="test rec results">
+      <figcaption> We test our density recovery routine and found the results very accurate.
+      </figcaption>
+  </article>
+--->
 
   <article>
-    <header><h3>Poster layout</h3></header>
+    <header><h3>Density Recovery Results</h3></header>
+    <p>
+Below, we present the density recovery result for one of the quasars. The orange line represents the observed flux, while the thin blue lines show 100 realizations of the continuum fitting. The thin black lines correspond to the recovered density fields associated with each continuum fit.
+    
+    </p>
+        <figure>
+      <img src="https://huanqingchen.github.io/files/XQR30_density_CFHT/denrec.svg" width="200" height="180" alt="Density recovery result for one example quasar.">
+    </figure>
+    <p>
+Cumulative distribution functions (CDFs) of the density within 1.5–3.0 pMpc for each quasar in the sample. The shaded bands indicate the 68% uncertainty, primarily due to continuum fitting.
+    </p>
+        <figure>
+      <img src="https://huanqingchen.github.io/files/XQR30_density_CFHT/CDF_0_FWHM30kmps.svg" width="300" height="300" alt="Density cdf for five quasars.">
+    </figure>
+<p>
+We find a diverse range of environments within 3 pMpc of the quasars. Specifically, the region between 1.5 and 3.0 pMpc is consistent with the cosmic mean density, 
+while the inner 1.5 pMpc shows significant overdensities. 
+We further compare the observed CDFs with simulations to constrain the masses of the quasar host halos.
 
-    <p>Posters made using this template are composed of a sequence of blocks.  You can use CSS to customize the way the blocks are designed; by default they scroll left to right on wide screens and top to bottom on narrow screens.</p>
-
-    <b>Try resizing your browser to see how the poster's layout changes.</b>
+</p>
   </article>
 
 
+  <article>
+    <header><h3>Constraints On Quasar Halo Mass</h3></header>
+    <p>
+    We compared the density in the inner and outer regions of quasars and found that the inner region is significantly denser. 
+    We then compared the cumulative density distribution function (CDF) within the innermost 1.5 physical Mpc to that from the <a href="https://www.alcf.anl.gov/science/projects/cosmic-reionization-computers-0"> CROC simulation</a>,
+and found that the observed regions are more massive than those in the simulation box. 
+    </p>
+    <figure>
+      <img src="https://huanqingchen.github.io/files/XQR30_density_CFHT/compare_XQR30_CROC_0.5_1.5_pMpc_FWHM30kmps.svg" width="300" height="300" alt="inner region cdf">
+      <figcaption>
+      </figcaption>
+    </figure>
+<p>We calculated the halo bias parameter and constrained the quasar halo mass to be \( \log_{\rm 10} (M_h/M_\odot)=12.5^{+0.4}_{-0.7} \).</p>
+  </article>
 
-  <figure style="flex-grow: 9999999">
-    <img style="width: 70%" src="logo.svg" alt="Project logo" />
-    <figcaption>A stand-alone figure to fill the remaining space.</figcaption>
-  </figure>
-    </main>
+  <article>
+    <header><h3>Reference</h3></header>
+<p>
+  Chen, H. et al. 2022, <em>ApJ</em>, 931, 29,  
+  <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...931...29C/abstract" target="_blank" rel="noopener noreferrer">
+    link
+  </a>
+<br>
+    Chen, H. &amp; Gnedin, N. Y. 2021, <em>ApJ</em>, 916, 118,  
+    <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...916..118C/exportcitation" target="_blank" rel="noopener noreferrer">
+      link
+    </a>
+<br>
+  Gnedin, N. Y. 2014, <em>ApJ</em>, 793, 29,  
+  <a href="https://ui.adsabs.harvard.edu/abs/2014ApJ...793...29G/abstract" target="_blank" rel="noopener noreferrer">
+    link
+  </a>
+<br>
+  Gnedin, N. Y. et al. 2017, <em>ApJ</em>, 841, 26,  
+  <a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...841...26G/abstract" target="_blank" rel="noopener noreferrer">
+    link
+  </a>
+<br>
+  D'Odorico, V. et al. 2023, <em>MNRAS</em>, 523, 1399,  
+  <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.1399D/abstract" target="_blank" rel="noopener noreferrer">
+    link
+  </a>
+</p>
+  </article>
+
+<!---
+  <article>
+    <header><h3>Contact</h3></header>
+huanqing.chen@ualberta.ca
+    <p>
+    </p>
+  </article>
+    --->
+
+</main>
 
     <footer>
       <address class="monospace">  <a href="https://github.com/cpitclaudel/academic-poster-template">https://github.com/cpitclaudel/academic-poster-template</a>
@@ -147,4 +220,5 @@
           </footer>
   </body>
 </html>
+
 
